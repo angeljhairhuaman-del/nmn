@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<p>🌇 El cielo se tiñe de fuego, y pienso en ti...</p>
+<p>✨ Cada color del atardecer me recuerda tu mirada,</p>
+<p>🌤️ suave como la brisa, cálida como mi esperanza.</p>
+<p>😊 Tu sonrisa... esa luz que no se apaga,</p>
+<p>🌸 florece en mi memoria como una rosa encantada.</p>
+<p>💖 Y mientras el sol se despide del día,</p>
+<p>🌙 mi corazón te llama con melancolía.</p>
+<p>🌹 Porque tú eres mi atardecer favorito,</p>
+<p>💫 la razón por la que el cielo se vuelve infinito.</p>
+<p>🕊️ Te pienso en cada ocaso, te amo en cada luz que se va...</p>
+<p>❤️ Porque tú, mi amor, eres la belleza que nunca se va.</p>
+  <title>Te Amo</title>
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: pink;
+      overflow: hidden;
+      font-family: 'Segoe Script', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .cuadro {
+      border: 3px solid #ff4d6d;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #ff4d6d;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .corazon {
+      font-size: 100px;
+      color: #ff1a1a;
+      text-shadow: 0 0 30px #ff4d6d;
+      animation: latido 1.5s infinite;
+    }
+
+    .mensaje {
+      font-size: 60px;
+      color: #ff4d6d;
+      margin-top: 20px;
+      text-shadow: 0 0 20px #ff99aa;
+    }
+
+    .submensaje {
+      font-size: 30px;
+      color: #ff99aa;
+      margin-top: 20px;
+      text-shadow: 0 0 10px #ff4d6d;
+    }
+
+    .poema {
+      margin-top: 30px;
+      font-size: 22px;
+      color: #ffc0cb;
+      white-space: pre-line;
+      line-height: 1.6;
+      text-shadow: 0 0 10px #ff4d6d;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .petalos {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .petalo {
+      position: absolute;
+      top: -50px;
+      width: 20px;
+      height: 20px;
+      background: radial-gradient(circle, #ff4d6d 40%, transparent 70%);
+      border-radius: 50% 50% 50% 50%;
+      animation: caer 10s linear infinite;
+    }
+
+    .petalo:nth-child(odd) {
+      background: radial-gradient(circle, #ff99aa 40%, transparent 70%);
+    }
+
+    @keyframes caer {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        left: calc(100% * var(--x));
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .petalo:nth-child(1) { --x: 0.1; animation-delay: 0s; }
+    .petalo:nth-child(2) { --x: 0.2; animation-delay: 1s; }
+    .petalo:nth-child(3) { --x: 0.3; animation-delay: 2s; }
+    .petalo:nth-child(4) { --x: 0.4; animation-delay: 3s; }
+    .petalo:nth-child(5) { --x: 0.5; animation-delay: 4s; }
+    .petalo:nth-child(6) { --x: 0.6; animation-delay: 5s; }
+    .petalo:nth-child(7) { --x: 0.7; animation-delay: 6s; }
+    .petalo:nth-child(8) { --x: 0.8; animation-delay: 7s; }
+    .petalo:nth-child(9) { --x: 0.9; animation-delay: 8s; }
+    .petalo:nth-child(10){ --x: 1.0; animation-delay: 9s; }
+  </style>
+</head>
+<body>
+  <div class="cuadro">
+    <div class="corazon">❤️</div>
+    <div class="mensaje">Te amo</div>
+    <div class="submensaje">Te llevo en mi corazón</div>
+    <div class="poema">
+      Eres la rosa que no se marchita,  
+      la luz que florece en mi oscuridad.  
+      Cada pétalo tuyo es un suspiro,  
+      cada aroma, una eternidad.  
+
+      En tu mirada vive el cielo,  
+      en tu voz, la paz que me sana.  
+      Y aunque el tiempo nos pruebe,  
+      mi amor por ti nunca se desgana.  
+
+      Porque amarte es mi destino,  
+      y soñarte, mi bendición.  
+      Te amo con cada latido,  
+      te guardo en mi corazón.
+    </div>
+  </div>
+
+  <div class="petalos">
+    <span class="petalo"></span>
+    <span class="petalo"></span>
+    <span class="petalo"></span>
+    <span class="petalo"></span>
+    <span class="petalo"></span>
+    <span class="petalo"></span>
+    <span class="petalo"></span>
+    <span class="petalo"></span>
+    <span class="petalo"></span>
+    <span class="petalo"></span>
+  </div>
+</body>
+</html>
